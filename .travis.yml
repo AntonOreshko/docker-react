@@ -1,11 +1,10 @@
 language: generic
 sudo: required
 services:
-  - node
   - docker
 
 before_install:
   - docker build -t araxis/docker-react -f Dockerfile.dev .
 
-script:
-  - docker run araxis/docker-react nmp run test -- --coverage
+#script:
+#- docker run araxis/docker-react nmp run test -- --coverage
